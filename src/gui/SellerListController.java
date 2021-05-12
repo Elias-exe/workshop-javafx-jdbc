@@ -1,6 +1,7 @@
 package gui;
 
 import java.io.IOException;
+
 import java.net.URL;
 import java.util.Date;
 import java.util.List;
@@ -124,7 +125,7 @@ public class SellerListController implements Initializable, DataChangerListener 
 	public void onBtNewAction(ActionEvent event) {
 		Stage parentStage = Utils.currentStage(event);
 		Seller obj = new Seller();
-		createDialogForm(obj, "/gui/SellerForm.fxml", parentStage);
+		createDialogForm(obj,"/gui/SellerForm.fxml", parentStage);
 	}
 
 	public void setSellerService(SellerService service) {
